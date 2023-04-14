@@ -25,7 +25,7 @@ def predict():
         "disease": disease,
         "remedy": remedy,
     }
-    response = jsonify(response)
+    response = jsonify(response+"why no work")
     return response
 
 
