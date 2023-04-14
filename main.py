@@ -2,14 +2,14 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 from torch.functional import split
 from model_files.ml_predict import predict_plant, Network
-from pyfcm import FCMNotification
+#from pyfcm import FCMNotification
 import base64
 from decouple import config
 
 
-app = Flask("Plant Disease Detector")
+app = Flask("main")
 CORS(app)
-push_service = FCMNotification(api_key=config('API_KEY'))
+#push_service = FCMNotification(api_key=config('API_KEY'))
 
 @app.route('/', methods=['POST'])
 def predict():
@@ -46,8 +46,8 @@ def send_notification():
             "body": message,
         }
 
-        result = push_service.notify_topic_subscribers(
-            data_message=data_message, topic_name="susya")
+       # result = push_service.notify_topic_subscribers(
+        #    data_message=data_message, topic_name="susya")
 
         print(result)
         # location = key_dict['location']
