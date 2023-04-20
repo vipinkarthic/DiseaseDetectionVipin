@@ -1,7 +1,6 @@
 pandas
--f https://download.pytorch.org/whl/torch_stable.html
-torch==1.8.1
-torchvision==0.8.2
+torch==1.13.1
+torchvision==0.10.1
 numpy
 matplotlib
 flask==2.0.0
