@@ -8,5 +8,4 @@ flask==2.0.0
 seaborn
 gunicorn
 flask-cors
-pyfcm
 python-decouple
