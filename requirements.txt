@@ -1,6 +1,6 @@
 pandas
 torch==1.13.1
-torchvision==0.10.1
+torchvision
 numpy
 matplotlib
 flask==2.0.0
