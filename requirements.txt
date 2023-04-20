@@ -1,5 +1,5 @@
 pandas
-torch==1.13.1
+torch
 torchvision
 numpy
 matplotlib
